@@ -1,0 +1,19 @@
+
+$fontFamily: 'Ubuntu', sans-serif;
+$colorWhite: #fff;
+$textTransform: uppercase;
+
+.header {
+    padding-top: 12px;
+ }
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: $textTransform;
+    color: $colorWhite;
+    font-family: $fontFamily;
+    font-size: 13px;
+    font-weight: 500;
+}

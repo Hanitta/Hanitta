@@ -1,0 +1,22 @@
+
+
+.fixed-menu {
+    width: 3%;
+    position: fixed;
+    right: 40px;
+    top: 90px;
+}
+
+.fixed-menu__block {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.fixed-menu__elem {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}

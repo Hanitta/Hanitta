@@ -1,0 +1,50 @@
+
+.social-block {
+    display: flex;
+    flex: 1;
+    height: 60px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social {
+    display: block;
+    text-align: bottom;
+  
+    width: 23px;
+    height: 20px;
+    margin: 10px;
+}
+
+.social__vk {
+    background: url(../img/css_sprites.png) -10px -90px;
+
+    &:hover {
+        background: url(../img/css_sprites.png) -53px -90px;
+    }
+
+}
+
+.social__fb {
+    background: url(../img/css_sprites.png) -10px -10px;
+    
+    &:hover {
+        background: url(../img/css_sprites.png) -50px -10px;
+    }
+}
+
+.social__inst {
+    background: url(../img/css_sprites.png) -10px -50px;
+
+    &:hover {
+        background: url(../img/css_sprites.png) -50px -50px;
+    }
+}
+
+.social__tw {
+    background: url(../img/css_sprites.png) -90px -10px;
+
+    &:hover {
+        background: url(../img/css_sprites.png) -90px -46px;
+    }
+}

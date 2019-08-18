@@ -1,0 +1,30 @@
+$fontFamily: 'Ubuntu', sans-serif;
+$colorWhite: #fff;
+
+.contacts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    align-items: flex-start;
+    justify-content: center; 
+}
+
+.contacts__address, .contacts__phone {
+    color: $colorWhite;
+    font-family: $fontFamily;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.contacts__phone {
+    color: #e45028;
+    font-weight: 700;
+}
+
+.contacts__phone::before {
+    content: url(../img/phone.png);
+    margin-right: 6px;
+    margin-top: 5px;
+}

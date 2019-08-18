@@ -1,0 +1,74 @@
+$fontFamily: 'Ubuntu', sans-serif;
+$fontFamilyGagalin: 'Gagalin';
+
+$colorWhite: #fff;
+$colorGrey: #2f3234;
+
+.page-comments {
+    height: 100%;
+    width: 100%;
+}
+
+.comments-block {
+    margin: 0 auto;
+}
+
+.comments-blosk__avatar {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.comments-block__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comments-blosk__item {
+    display: flex;
+    position: relative;  
+    width: 25%;
+    height: 50%;
+
+    &:hover {
+        filter: grayscale(100);
+    }
+}
+
+.comments__text {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.btn-order__background--more {
+    background: $colorGrey;
+}
+
+.comments__user {
+    color: $colorWhite;
+    font-family: $fontFamilyGagalin;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28.11px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+ }
+
+.comments__desc {
+    color: $colorWhite;
+    font-family: $fontFamily;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+

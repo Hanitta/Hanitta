@@ -1,0 +1,65 @@
+
+$fontFamily: 'Ubuntu', sans-serif;
+$fontFamilyLifehack: 'Lifehack Medium';
+
+
+
+$colorGrey: #2f3234;
+
+.page-features {
+    background: url(../img/bg.png) center center /cover no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.content_page-features {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.title_black {
+    color: $colorGrey;
+    margin-bottom: 30px;
+}
+
+
+.features__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature__block {
+    max-width: 285px;
+    text-align: center;
+    margin-right: 35px;
+}
+
+.feature__block:last-child {
+    margin-right: 0;
+}
+
+.feature__img {
+    margin: 30px;
+}
+
+.feature__header {
+    color: $colorGrey;
+    font-family: $fontFamilyLifehack;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.14px;
+    letter-spacing: -0.6px;
+    margin-bottom: 10px;
+}
+.feature__desc {
+    opacity: 0.8;
+    color: $colorGrey;
+    font-family: $fontFamily;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.02px;
+}

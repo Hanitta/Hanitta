@@ -1,0 +1,25 @@
+.btn-order_nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-order__background {
+    width: 97px;
+    height: 35px;
+    background: #e45028;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-order__text {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+

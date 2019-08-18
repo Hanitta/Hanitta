@@ -1,0 +1,72 @@
+
+$fontFamilyLifehack: 'Lifehack Medium';
+$fontFamilyGagalin: 'Gagalin';
+
+$colorOrange: #f9b43b;
+
+.page {
+    display: flex;
+    width: 100%;
+}
+
+.content_banner {
+    display: flex;
+    margin-top: 30px;
+    min-height: 477px;
+}
+
+.banner {
+    position: relative;
+    display: block;
+    flex: 1;
+    margin-right: 13px;
+}
+
+.banner__background {
+    position: absolute;
+    top: 50px;
+    left: 18px;
+}
+
+.banner__img {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    max-width: 451px;
+    max-height: 424px;
+}
+
+@font-face {
+    font-family: 'Gagalin';
+    src: url("../fonts/Gagalin-Regular.otf") format("opentype");
+}
+
+.title {
+    color: $colorOrange;
+    font-family: $fontFamilyGagalin;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 85px;
+}
+
+@font-face {
+    font-family: 'Lifehack Medium';
+    src: url("../fonts/Lifehack\ Medium.otf") format("opentype");
+}
+  
+.description__text {
+    font-family: $fontFamilyLifehack;
+    font-weight: 500;
+    letter-spacing: -1.63px;
+    line-height: 65px;
+    color: #ffffff; 
+    font-size: 65px;
+    width: 406px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}

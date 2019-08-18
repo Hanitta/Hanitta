@@ -1,0 +1,17 @@
+.general-page {
+  background: url(../img/video-bg.png) center center/cover no-repeat;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto; }
+
+.texture {
+  background: url(../img/texture.png);
+  max-width: 100%;
+  height: 100vh; }
+
+.content {
+  width: 975px;
+  margin: 0 auto; }
+
+.section-general-page {
+  max-height: 515px; }

@@ -1,0 +1,26 @@
+$colorWhite: #fff;
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+.nav__item {
+    list-style: none;    
+}
+
+.nav__link {
+    text-decoration: none;
+    color: $colorWhite;
+}
+
+.nav__link::after {
+    content: "•";
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.nav__link::after:last-child {
+    content: none;
+}

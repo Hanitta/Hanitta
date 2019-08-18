@@ -1,0 +1,434 @@
+/*@import url(btn-order.css);
+/*
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+   overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li  {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}*/ /*
+.general-page {
+    background: url(../img/video-bg.png) center center /cover no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.texture {
+    background: url(../img/texture.png);
+    max-width: 100%;
+    height: 100vh;
+
+}
+
+.content {
+    width: 975px;
+    margin: 0 auto;
+}
+
+.section-general-page {
+    max-height: 515px;
+}
+
+
+/*----header-------------*/
+/*
+.header {
+   padding-top: 12px;
+}*/
+
+ /*НУЖНОЕ закомментировала на время проверки SCSS 
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}*/
+
+/*-------------*/
+
+/*-----nav---*/
+/*
+.nav__list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+.nav__item {
+    list-style: none;    
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    line-height: 30px;
+}
+
+.nav__link::after {
+    content: "•";
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.nav__link::after:last-child {
+    content: none;
+}
+
+*/
+/*----------------------*/
+/*
+.page {
+    display: flex;
+    width: 97%;
+}
+
+.content_banner {
+    display: flex;
+    margin-top: 30px;
+    min-height: 477px;
+}
+/*--------banner------------*/
+/*
+.banner {
+    position: relative;
+    display: block;
+    flex: 1;
+    margin-right: 13px;
+}
+
+.banner__background {
+    position: absolute;
+    top: 50px;
+    left: 18px;
+}
+
+.banner__img {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    max-width: 451px;
+    max-height: 424px;
+}
+
+/*----------------------------*/
+
+/*-----------main----------*//*
+@font-face {
+    font-family: 'Gagalin';
+    src: url("../fonts/Gagalin-Regular.otf") format("opentype");
+}
+
+.title {
+    color: #f9b43b;
+    font-family: 'Gagalin';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 85px;
+}
+
+
+
+@font-face {
+    font-family: 'Lifehack Medium';
+    src: url("../fonts/Lifehack\ Medium.otf") format("opentype");
+}
+  
+.description__text {
+    font-family: 'Lifehack Medium';
+    font-weight: 500;
+    letter-spacing: -1.63px;
+    line-height: 65px;
+    color: #ffffff; 
+    font-size: 65px;
+    width: 406px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+/*------------------------*/
+
+/*------------pagination--------------*/
+/*
+.sidebar {
+    width: 3%;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pagination__elem {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+/*-----------------------------------*/
+
+/*--------arrow-------*/
+/*
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97px;
+}
+/*---------------------*/
+
+
+
+/*------------page2-----------*/
+/*
+.page-features {
+    background: url(../img/bg.png) center center /cover no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.content_page-features {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.title_black {
+    color: #2f3234;
+    margin-bottom: 30px;
+}
+
+
+.features__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature__block {
+    max-width: 285px;
+    text-align: center;
+    margin-right: 35px;
+}
+
+.feature__block:last-child {
+    margin-right: 0;
+}
+
+.feature__img {
+    margin: 30px;
+}
+
+.feature__header {
+    color: #2f3234;
+    font-family: 'Lifehack Medium';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.14px;
+    letter-spacing: -0.6px;
+    margin-bottom: 10px;
+}
+.feature__desc {
+    opacity: 0.8;
+    color: #2f3234;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.02px;
+}
+
+/*-----------------------*/
+/*------------page3-----------*/
+/*
+.page-comments {
+    height: 100%;
+    width: 100%;
+}
+
+.comments-block {
+    
+    margin: 0 auto;
+}
+
+.comments-blosk__avatar {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.comments-block__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comments-blosk__item {
+    display: flex;
+    position: relative;  
+    width: 25%;
+    height: 50%;
+}
+
+.comments__text {
+    position: absolute;
+    max-width: 225px;
+    max-height: 135px;
+    opacity: 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+    
+}
+
+.btn-order__background--more {
+    background: #2f3234;
+}
+
+.comments__user {
+    color: #ffffff;
+    font-family: 'Gagalin';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28.11px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+ }
+.comments__desc {
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.comments-blosk__itemt:hover {
+    filter: grayscale(100);
+}
+
+.comments__text:hover {
+    opacity: 1;
+}
+/*-----------------------*/
+
+
+/*--------footer----------*/
+/*
+.footer {
+    height: 60px;
+    width: 100%;
+    background: #121212;
+} 
+
+.footer_container {
+    display: flex;
+}
+*//*
+.contacts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    align-items: flex-start;
+    justify-content: center; 
+}
+
+.contacts__address, .contacts__phone {
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.contacts__phone {
+    color: #e45028;
+    font-weight: 700;
+}
+
+.contacts__phone::before {
+    content: url(../img/phone.png);
+    margin-right: 6px;
+    margin-top: 5px;
+}*/
+/*
+.social-block {
+    display: flex;
+    flex: 1;
+    height: 60px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social {
+    display: block;
+    text-align: bottom;
+    
+  
+    width: 23px;
+    height: 20px;
+    margin: 10px;
+}
+
+.social__vk {
+    background: url(../img/css_sprites.png) -10px -90px;
+}
+
+.social__vk:hover {
+    background: url(../img/css_sprites.png) -53px -90px;
+}
+
+.social__fb {
+    background: url(../img/css_sprites.png) -10px -10px;
+}
+
+.social__fb:hover {
+    background: url(../img/css_sprites.png) -50px -10px;
+}
+
+.social__inst {
+    background: url(../img/css_sprites.png) -10px -50px;
+}
+
+.social__inst:hover {
+    background: url(../img/css_sprites.png) -50px -50px;
+}
+
+.social__tw {
+    background: url(../img/css_sprites.png) -90px -10px;
+}
+
+.social__tw:hover {
+    background: url(../img/css_sprites.png) -90px -46px;
+}
