@@ -31,16 +31,23 @@ $colorGrey: #2f3234;
     display: flex;
     justify-content: space-between;
 }
+.features__item {
+    margin-right: 35px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+} 
 
 .feature__block {
     max-width: 285px;
     text-align: center;
-    margin-right: 35px;
+    /*margin-right: 35px;*/
 }
-
+/*
 .feature__block:last-child {
     margin-right: 0;
-}
+}*/
 
 .feature__img {
     margin: 30px;

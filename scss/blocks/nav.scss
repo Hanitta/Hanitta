@@ -8,13 +8,25 @@ $colorWhite: #fff;
 }
 .nav__item {
     list-style: none;    
+    &::after {
+        content: "•";
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    &::after:last-child {
+        content: none;
+    }
+}
+.nav__item::after:last-child {
+    content: "";
 }
 
 .nav__link {
-    text-decoration: none;
+   /* text-decoration: none;*/
     color: $colorWhite;
 }
-
+/*
 .nav__link::after {
     content: "•";
     margin-right: 15px;
@@ -23,4 +35,4 @@ $colorWhite: #fff;
 
 .nav__link::after:last-child {
     content: none;
-}
+}*/
