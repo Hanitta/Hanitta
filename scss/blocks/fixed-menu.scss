@@ -1,28 +1,32 @@
 .fixed-menu {
     position: fixed;
-    right: 50px;
-    top: 95px;
+    right: 3.125rem;
+    top: 5.9375rem;
+
+    @include tab {
+        display: none;
+    }
 }
 
 .fixed-menu__item--active {
     .fixed-menu__link {
-    border:  1px solid#fff;
+    border:  0.0625rem solid#fff;
     }
 }
 
 .fixed-menu__link {
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: 0.0625rem solid transparent;
     position: relative;
-    margin-bottom: 3px;
+    margin-bottom: 0.1875rem;
 
     &::before {
         content: "";
-        width: 6px;
-        height: 6px;
+        width: 0.375rem;
+        height: 0.375rem;
         border-radius: 50%;
         background: #fff;
         position: absolute;

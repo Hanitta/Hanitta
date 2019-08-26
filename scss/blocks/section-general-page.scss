@@ -1,39 +1,30 @@
 
-$fontFamilyLifehack: 'Lifehack Medium';
-$fontFamilyGagalin: 'Gagalin';
-
-$colorOrange: #f9b43b;
 
 .page {
     display: flex;
     width: 100%;
+
+    @include tab {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 23%;
+    }
 }
 
 .content_banner {
     display: flex;
-    margin-top: 30px;
-    min-height: 477px;
+    margin-top: 1.875rem;
+    min-height: 29.81rem;
 }
 
 .banner {
-    position: relative;
     display: block;
     flex: 1;
-    margin-right: 13px;
-}
-
-.banner__background {
-    position: absolute;
-    top: 50px;
-    left: 18px;
+    margin-right: 0.81rem;
 }
 
 .banner__img {
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    max-width: 451px;
-    max-height: 424px;
+    max-width: 100%;
 }
 
 @font-face {
@@ -44,9 +35,20 @@ $colorOrange: #f9b43b;
 .title {
     color: $colorOrange;
     font-family: $fontFamilyGagalin;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 400;
-    line-height: 85px;
+
+    @include tab { 
+        line-height: 4rem;
+    }
+}
+
+.title-general-page,
+.description__text {
+    @include tab {
+    margin: 1.25rem 0;
+    text-align: center;
+    }
 }
 
 @font-face {
@@ -57,11 +59,11 @@ $colorOrange: #f9b43b;
 .description__text {
     font-family: $fontFamilyLifehack;
     font-weight: 500;
-    letter-spacing: -1.63px;
-    line-height: 65px;
+    letter-spacing: -0.1018rem;
+    line-height: 4.0625rem;
     color: #ffffff; 
-    font-size: 65px;
-    width: 406px;
+    font-size: 4.06rem;
+    width: 25.37rem;
 }
 
 .description {

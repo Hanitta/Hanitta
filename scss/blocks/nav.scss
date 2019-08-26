@@ -1,4 +1,3 @@
-$colorWhite: #fff;
 
 .nav__list {
     display: flex;
@@ -10,19 +9,33 @@ $colorWhite: #fff;
     list-style: none;    
     &::after {
         content: "•";
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-    &::after:last-child {
-        content: none;
+        margin-right: 0.9375rem;
+        margin-left: 0.9375rem;
     }
     
+    &:last-child {
+        &::after {
+       display: none;
+        }
+    }
+ 
 }
-/*
-.nav__item::after:last-child {
-    content: "";
-}
-*/
+
 .nav__link {
     color: $colorWhite;
+}
+
+.nav-menu {
+    @include tab {
+        display: none;
+    }
+}
+
+.hamburger-menu {
+    display: none;
+
+    @include tab {
+        display: flex;
+        margin-left: 0.625rem;
+    }
 }
