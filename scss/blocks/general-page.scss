@@ -5,6 +5,10 @@
     max-width: 100%;
     height: 100vh;
     margin: 0 auto;
+
+    @include tab {
+        height: 100%;
+    }
 }
 
 .texture {
@@ -12,13 +16,12 @@
     max-width: 100%;
     height: 100vh;
 
-}
+    @include tab {
+        height: 100%;
+    }
 
-.content {
-    width: 975px;
-    margin: 0 auto;
 }
 
 .section-general-page {
-    max-height: 515px;
+    height: 77%;
 }
