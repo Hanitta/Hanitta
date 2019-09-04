@@ -11,7 +11,8 @@
     margin: 6.87rem 6.25rem;
 
     @include tab {
-        margin: 0.625rem;
+        //margin: 0.625rem;
+        display: none;
     }
 }
 
@@ -47,9 +48,24 @@
 }
 
 .menu__item {
-    background: url(../img/Rectangle_1.png) center center /cover;
+   // background: url(../img/Rectangle_1.png) center center /cover;
     display: flex;
     height: 100%;
+}
+
+.menu__item--meat {
+    background: linear-gradient(rgba(#303234, .6)),
+    url(../img/photo-berg.png) center center /cover no-repeat;
+}
+
+.menu__item--vegan {
+    background: linear-gradient(rgba(#303234, .6)),
+    url(../img/photo-2.png) center center /cover no-repeat;
+}
+
+.menu__item--diet {
+    background: linear-gradient(rgba(#303234, .6)),
+    url(../img/photo-salad.png) center center /cover no-repeat;
 }
 
 .title-rotate {
@@ -81,4 +97,6 @@
     font-family: $fontFamily;
     line-height: 1.6em;
     font-size: 0.875rem;
+
+    //background: linear-gradient(rgba(#303234, .3));
 }

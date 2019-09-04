@@ -51,15 +51,15 @@
                         </div>
                         <div class="include-nav">
                             <div class="btn-order btn-order_nav">
-                            <div class="btn-order__background">
-                                <a href="#" class="btn-order__text">заказать</a> 
+                                <div class="btn-order__background">
+                                    <a href="#" class="btn-order__text">заказать</a> 
+                                </div>
                             </div>
-                        </div>
-                        <div class="hamburger-menu">
-                            <a href="#" class="hamburger-menu__link">
-                                <img src="./img/3-layers.png" alt="hamburger-menu" class="hamburger-menu__img">
-                            </a>
-                            <div class="full-screen-menu">
+                            <div class="hamburger-menu" id="hamburger-menu-id">
+                                <a href="#" class="hamburger-menu__link">
+                                    <img src="./img/3-layers.png" alt="hamburger-menu" class="hamburger-menu__img">
+                                </a>
+                            <!--<div class="full-screen-menu" id="full-screen-menu-id">
                                 <div class="full-screen-menu__wrapper">
                                     <div class="full-screen-menu__logo">
                                         <a href="#" class="logo__link">
@@ -88,18 +88,17 @@
                                             <a href="#" class="full-screen-menu__link">Контакты</a>
                                         </li>
                                     </ul>
-                                    <div class="full-screen-menu__closed">
+                                    <div class="full-screen-menu__closed" id="full-screen-menu__closed-id">
                                         <div class="full-screen-menu__icon-closed">
-                                            <a href="#" class="full-screen-menu__link-closed">
+                                            <a href="#" class="full-screen-menu__link-closed" id="full-screen-menu__closed-id">
                                                 <img src="./img/Rounded_Rectangle_2.png" alt="закрыть" class="full-screen-menu__img">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
+                            </div>-->
                             </div>
                         </div>
-                        </div>
-                        
                     </div>
                 </header>
                 <section class="section-general-page">
@@ -488,7 +487,7 @@
             </div>
             <div class="accordion">
                 <ul class="menu__list">
-                    <li class="menu__item">
+                    <li class="menu__item menu__item--meat">
                         <div class="menu-title__block menu-title__block--active">
                             <div class="title title-white title-rotate">
                                 Для мясоедов
@@ -508,7 +507,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item menu__item--vegan">
                         <div class="menu-title__block">
                             <h2 class="title title-white title-rotate">
                                 Вегетарианское
@@ -528,23 +527,23 @@
                             </p>
                         </div>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item menu__item--diet">
                         <div class="menu-title__block">
                             <h2 class="title title-white title-rotate">
-                                Диетическое        
+                                 Диетическое        
                             </h2>
                         </div>
                         <div class="menu__text">
                             <p>
-                            Речевой акт редуцирует диалектический характер. 
-                            Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
-                            Лирический субъект начинает диссонансный анжамбеман. 
-                            Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. 
-                            Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. 
-                            Речевой акт редуцирует диалектический характер. 
-                            Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
-                            Лирический субъект начинает диссонансный анжамбеман. 
-                            Наш современник стал особенно чутко относиться к слову.
+                                Речевой акт редуцирует диалектический характер. 
+                                Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
+                                Лирический субъект начинает диссонансный анжамбеман. 
+                                Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. 
+                                Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. 
+                                Речевой акт редуцирует диалектический характер. 
+                                Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
+                                Лирический субъект начинает диссонансный анжамбеман. 
+                                Наш современник стал особенно чутко относиться к слову.
                             </p>
                         </div>
                     </li>
@@ -716,6 +715,7 @@
                                     Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... 
                                     Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                                 </p> 
+                            </div>
                             <div class="btn-order">
                                 <div class="btn-order__background btn-order__background--more">
                                     <a href="#" class="btn-order__text">подробнее</a> 
@@ -904,7 +904,7 @@
             </ul>
         </div>
     </div> 
-<!--<div class="full-screen-menu">
+    <div class="full-screen-menu">
         <div class="full-screen-menu__wrapper">
             <div class="full-screen-menu__logo">
                 <a href="#" class="logo__link">
@@ -935,10 +935,31 @@
             </ul>
             <div class="full-screen-menu__closed">
                 <div class="full-screen-menu__icon-closed">
-                    <img src="./img/Rounded_Rectangle_2.png" alt="закрыть" class="full-screen-menu__img"> 
+                    <a href="#" class="full-screen-menu__link-closed" id="full-screen-menu__closed-id">
+                        <img src="./img/Rounded_Rectangle_2.png" alt="закрыть" class="full-screen-menu__img">
+                    </a>
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
+
+    <script>
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const fullScreenMenu = document.querySelector(".full-screen-menu");
+        const burgerMenuClosed = document.querySelector("#full-screen-menu__closed-id");
+
+        hamburgerMenu.addEventListener('click', function(event){
+            event.preventDefault();
+            fullScreenMenu.style.right = '0';
+
+        })
+
+        burgerMenuClosed.addEventListener('click', function(ev){
+            ev.preventDefault();
+            fullScreenMenu.style.right = '-100%';
+            
+        })
+
+    </script>
 </body>
 </html>

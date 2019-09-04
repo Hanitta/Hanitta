@@ -34,11 +34,11 @@
 .hamburger-menu {
     display: none;
     position: relative;
-
+/*
 &:hover .full-screen-menu {
         display: block;
     }
-
+*/
     @include tab {
         display: flex;
         margin-left: 0.625rem;
