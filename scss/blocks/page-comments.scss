@@ -1,16 +1,34 @@
-$fontFamily: 'Ubuntu', sans-serif;
-$fontFamilyGagalin: 'Gagalin';
-
-$colorWhite: #fff;
-$colorGrey: #2f3234;
-
 .page-comments {
-    height: 100%;
+    height: 100vh;
     width: 100%;
+
+    @include tab {
+        height: 100vh;
+    }
 }
 
 .comments-block {
     margin: 0 auto;
+    height: 100vh;
+}
+
+.comments-block__list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.comments-blosk__item {
+    display: flex;
+    position: relative;  
+    flex-wrap: wrap;
+    width: calc(100% / 4);
+    height: 50%;
+
+    @include tab {
+        width: calc(100% / 2);
+        height: 25%;
+    }
 }
 
 .comments-blosk__avatar {
@@ -18,34 +36,30 @@ $colorGrey: #2f3234;
     height: 100%;
     display: block;
     object-fit: cover;
-}
-
-.comments-block__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.comments-blosk__item {
-    display: flex;
-    position: relative;  
-    width: 25%;
-    height: 50%;
-
-    &:hover {
-        filter: grayscale(100);
-    }
+    filter: grayscale(100);
 }
 
 .comments__text {
     position: absolute;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    margin-left: 20px;
+    padding: 1.25rem;
     box-sizing: border-box;
 
     &:hover {
-        opacity: 1;
+    
+            opacity: 1;
+            transition: 0.3s;
+            background-color: rgba(20, 20, 20, 0.7);
+        
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -56,19 +70,41 @@ $colorGrey: #2f3234;
 .comments__user {
     color: $colorWhite;
     font-family: $fontFamilyGagalin;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 28.11px;
-    letter-spacing: 1px;
-    margin-top: 50px;
+    letter-spacing: 0.0625rem;
+
+    @include phones {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 0.3rem;
+    }
  }
 
 .comments__desc {
     color: $colorWhite;
     font-family: $fontFamily;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.5rem;
+
+    @include phones {
+        height: 0;
+        overflow: hidden;
+    }
 }
 
+/*
+@media screen and (max-width: 768px) {
+    html {font-size: 14px }
+    
+    .comments-blosk__item {
+        width: calc(100% / 2);}
 
+}
+
+@media screen and (max-width: 480px) {
+    html {font-size: 13px }
+    .comments__desc {height: 0; overflow: hidden;}
+    
+}*/

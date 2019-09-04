@@ -1,0 +1,29 @@
+.page-team__background {
+  background: url(../img/team-background.png) center center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+.page-team__block {
+  background: url(../img/Rectangle_1.png) center center/cover no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%; }
+
+.accordeon-block__description__avatar {
+  width: 100px;
+  height: 100px; }
+
+.accordeon__description__avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.accordeon-block__member {
+  font-family: "Gagalin"; }
+  .accordeon-block__member::before {
+    content: url(../img/Polygon_1.png); }
