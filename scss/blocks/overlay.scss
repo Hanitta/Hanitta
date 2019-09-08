@@ -1,0 +1,61 @@
+
+.overlay {
+    display: none;
+    background: rgba(47, 50, 52, 0.99);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;    
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.overlay__wrap {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;  
+}
+
+.overlay__text {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //overflow: hidden;
+    border-radius: 0.31rem;
+    margin: 0 auto;
+    
+    width: 473px;
+    height: 254px;
+    position: relative;
+}
+
+.overlay__icon-closed {
+    align-items: flex-end;
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+}
+
+.overlay__user {
+    color: #2f3234;
+    font-family: $fontFamilyGagalin;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.0625rem;
+    padding: 1.25rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.overlay__desc {
+    font-family: $fontFamily;
+    color: #2f3234;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    padding: 1.25rem;
+}

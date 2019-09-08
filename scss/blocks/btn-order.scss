@@ -1,18 +1,14 @@
 
-$textTransform: uppercase;
-$fontFamily: 'Ubuntu', sans-serif;
-$colorWhite: #fff;
-
 .btn-order_nav {
     display: flex;
     justify-content: flex-end;
 }
 
 .btn-order__background {
-    width: 97px;
-    height: 35px;
+    width: 6.0625rem;
+    height: 2.1875rem;
     background: #e45028;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +19,7 @@ $colorWhite: #fff;
     text-decoration: none;
     color:$colorWhite;
     font-family: $fontFamily;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 500;
 }
 
