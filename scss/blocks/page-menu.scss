@@ -34,6 +34,7 @@
     justify-content: center;
     display: flex;
     margin-bottom: 2.5rem;
+    cursor: pointer;
 }
 
 .menu-title__block--active {
@@ -72,6 +73,7 @@
     font-size: 2.5rem;
     writing-mode: vertical-lr;
     transform: rotate(180deg); 
+    max-height: 18.75rem;
 
     
     @include phones {
@@ -82,6 +84,8 @@
 .menu__text {
     width: 0;
     overflow: hidden;
+    transition: 0.2s;
+    
     
 }
 
@@ -92,6 +96,7 @@
     color: #fff;
     display: flex;
     justify-content: center;
+    transition: 0.2s;
     
     
     font-family: $fontFamily;

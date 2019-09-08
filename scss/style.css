@@ -560,7 +560,36 @@ button {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.burger-content__items {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger-slider__wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1100px;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-slider__wrapp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1.25rem;
+  }
 }
 
 .arrow-left, .arrow-right {
@@ -589,10 +618,7 @@ button {
 }
 
 .burger-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90%;
+  width: 1100px;
   height: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -600,6 +626,7 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -608,7 +635,7 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 6.26rem;
+    padding: 1.25rem;
   }
 }
 
@@ -618,6 +645,14 @@ button {
   }
 }
 
+/*
+.burger-content__block {
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+*/
 .slider-right, .slider-left {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -670,7 +705,7 @@ button {
 }
 
 .burger__block {
-  width: 80%;
+  width: 100%;
 }
 
 .burger__img {
@@ -902,6 +937,10 @@ button {
   letter-spacing: 0.1018rem;
 }
 
+.accordeon-block__member:hover {
+  color: #f9b43b;
+}
+
 .accordeon-block__member::before {
   content: url(../img/Polygon_1.png);
   margin-right: 0.56rem;
@@ -929,6 +968,40 @@ button {
 @media screen and (max-width: 768px) {
   .accordeon-block__description--active {
     height: 12.31rem;
+  }
+}
+
+/*--------------------------*/
+button:focus {
+  outline: none;
+}
+
+.accordeon__item .accordeon-block__description {
+  height: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.accordeon__item--active .accordeon-block__member {
+  color: #f9b43b;
+}
+
+.accordeon__item--active .accordeon-block__member .accordeon-block__member::before {
+  content: url(../img/Polygon-up.png);
+  margin-right: 0.56rem;
+}
+
+.accordeon__item--active .accordeon-block__description {
+  height: 6.875rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .accordeon__item--active .accordeon-block__description {
+    height: 12.875rem;
   }
 }
 
@@ -978,6 +1051,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2.5rem;
+  cursor: pointer;
 }
 
 .menu-title__block--active {
@@ -1033,6 +1107,7 @@ button {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+  max-height: 18.75rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -1044,6 +1119,9 @@ button {
 .menu__text {
   width: 0;
   overflow: hidden;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .menu__text--active {
@@ -1057,6 +1135,9 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   font-family: "Ubuntu", sans-serif;
   line-height: 1.6em;
   font-size: 0.875rem;
@@ -1249,6 +1330,80 @@ button {
     .comments__desc {height: 0; overflow: hidden;}
     
 }*/
+.overlay {
+  display: none;
+  background: rgba(47, 50, 52, 0.99);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.overlay__text {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 0.31rem;
+  margin: 0 auto;
+  width: 473px;
+  height: 254px;
+  position: relative;
+}
+
+.overlay__icon-closed {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+}
+
+.overlay__user {
+  color: #2f3234;
+  font-family: "Gagalin";
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
+  padding: 1.25rem;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.overlay__desc {
+  font-family: "Ubuntu", sans-serif;
+  color: #2f3234;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: 1.25rem;
+}
+
 .page-order {
   background: #000;
   width: 100%;
@@ -1456,6 +1611,59 @@ button {
   border: none;
   text-transform: uppercase;
   margin-right: 1.25rem;
+}
+
+.overlay-order {
+  display: none;
+  background: rgba(47, 50, 52, 0.99);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay-order__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.overlay-order__text {
+  width: 12.25rem;
+  height: 6.625rem;
+  background: #fff;
+  border-radius: 0.31rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.overlay__desc {
+  margin: 0 auto;
 }
 
 .page-map {

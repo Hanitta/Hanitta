@@ -107,6 +107,9 @@
     font-size: 0.875rem;
     //font-weight: 400;
     letter-spacing: 0.1018rem;
+    &:hover {
+        color: $colorOrange;
+    }
     
     &::before {
         content: url(../img/Polygon_1.png);
@@ -135,5 +138,36 @@
     @include tab {
         height: 12.31rem;
         
+    }
+}
+
+
+/*--------------------------*/
+button:focus {
+    outline: none; 
+}
+
+.accordeon__item .accordeon-block__description {
+    height: 0;
+    transition: 0.3s;
+} 
+
+.accordeon__item--active .accordeon-block__member {
+    color: $colorOrange;
+        
+    .accordeon-block__member::before {
+            content: url(../img/Polygon-up.png);
+            margin-right: 0.56rem;
+        }
+    
+   
+}
+
+.accordeon__item--active .accordeon-block__description {
+    height: 6.875rem;
+    transition: 0.3s;
+
+    @include tab {
+        height: 12.875rem;
     }
 }
