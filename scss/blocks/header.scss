@@ -1,10 +1,6 @@
 
-$fontFamily: 'Ubuntu', sans-serif;
-$colorWhite: #fff;
-$textTransform: uppercase;
-
 .header {
-    padding-top: 12px;
+    padding-top: 0.75rem;
  }
 
 .header_content {
@@ -14,6 +10,22 @@ $textTransform: uppercase;
     text-transform: $textTransform;
     color: $colorWhite;
     font-family: $fontFamily;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 500;
+
+    @include tab {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.logo__img {
+    width: 6.1415rem;
+    height: 4.6448rem;
+}
+
+
+.include-nav {
+    display: flex;
+    align-items: center;
 }

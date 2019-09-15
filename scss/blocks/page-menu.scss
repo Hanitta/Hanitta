@@ -1,0 +1,107 @@
+
+.page-menu {
+    background: url(../img/bg-menu.png) center center /cover no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__title {
+    margin: 6.87rem 6.25rem;
+
+    @include tab {
+        //margin: 0.625rem;
+        display: none;
+    }
+}
+
+.title-white {
+    color: #fff;
+/*
+    @include tab {
+        font-size: 3.75rem;
+    }
+
+    @include phones {
+        font-size: 3.125rem;
+    }*/
+}
+
+.menu-title__block {
+    align-items: flex-end;
+    width: 5rem;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+
+.menu-title__block--active {
+    color: $colorOrange;
+}
+
+.menu__list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.menu__item {
+   // background: url(../img/Rectangle_1.png) center center /cover;
+    display: flex;
+    height: 100%;
+}
+
+.menu__item--meat {
+    background: linear-gradient(rgba(#303234, .6)),
+    url(../img/photo-berg.png) center center /cover no-repeat;
+}
+
+.menu__item--vegan {
+    background: linear-gradient(rgba(#303234, .6)),
+    url(../img/photo-2.png) center center /cover no-repeat;
+}
+
+.menu__item--diet {
+    background: linear-gradient(rgba(#303234, .6)),
+    url(../img/photo-salad.png) center center /cover no-repeat;
+}
+
+.title-rotate {
+    font-size: 2.5rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg); 
+    max-height: 18.75rem;
+
+    
+    @include phones {
+        font-size: 1.875rem;
+    }
+ }
+
+.menu__text {
+    width: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    
+    
+}
+
+.menu__text--active {
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 2.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    transition: 0.2s;
+    
+    
+    font-family: $fontFamily;
+    line-height: 1.6em;
+    font-size: 0.875rem;
+
+    //background: linear-gradient(rgba(#303234, .3));
+}

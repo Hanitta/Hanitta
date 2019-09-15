@@ -1,7 +1,43 @@
 
+$textTransform: uppercase;
+
+$fontFamily: 'Ubuntu', sans-serif;
+$fontFamilyLifehack: 'Lifehack Medium';
+$fontFamilyGagalin: 'Gagalin';
+
+$colorWhite: #fff;
+$colorOrange: #f9b43b;
+$colorGrey: #2f3234;
+
+@mixin tab() {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phones() {
+    @media screen and (max-width: 480px)  {
+        @content;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {font-size: 13px }
+    .content {max-width: 624px;flex-direction: column;}
+}
+
+@media screen and (max-width: 480px) {
+    html {font-size: 10px }
+    .content {max-width: 390px}
+}
+
+
 @import '../css/normalize.css';
 
 @import './variables.scss';
+
+@import './blocks/wrapper.scss';
+
 @import './blocks/general.scss';
 @import './blocks/general-page.scss';
 @import './blocks/header.scss';
@@ -9,12 +45,31 @@
 @import './blocks/btn-order.scss';
 @import './blocks/section-general-page.scss';
 @import './blocks/arraw.scss';
+
 @import './blocks/page-features.scss';
+
+@import './blocks/burger-slider.scss';
+
+@import './blocks/page-team.scss';
+
+@import './blocks/page-menu.scss';
+@import './blocks/composition.scss';
+
 @import './blocks/page-comments.scss';
+@import './blocks/overlay.scss';
+
+@import './blocks/page-video.scss';
+
+@import './blocks/page-order.scss';
+@import './blocks/form.scss';
+@import './blocks/overlayMessage.scss';
+
+@import './blocks/page-map.scss';
 @import './blocks/footer.scss';
 @import './blocks/contacts.scss';
 @import './blocks/social.scss';
 @import './blocks/fixed-menu.scss';
 
+@import './blocks/full-screen-menu.scss';
 
 

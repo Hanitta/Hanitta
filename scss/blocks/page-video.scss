@@ -1,0 +1,133 @@
+.page-video {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-video.png) center center /cover no-repeat;
+}
+
+.page-video__wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.content-video {
+    padding: 10%;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    //height: 25.31rem;
+    //width: 41.25rem;
+
+    height: 100%;
+    width: 100%;
+  
+    &.hidden {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+/*
+    @include tab {
+        height: 19.06rem;
+        width: 35rem;
+    }*/
+  }
+  
+  .video-container__poster {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/2-layers.png) center center / cover no-repeat;
+    cursor: pointer;
+    height: 25.43rem;
+  }
+  
+  .video-container-block1 {
+    height: 25.31rem;
+
+    &.active .video-container__poster {
+      display: none;
+    }
+  }
+ 
+ .video__playback {
+    height: 1rem;
+    width: 27.875rem;
+    position: relative;
+  
+    &:before {
+      content: "";
+      height: 0.25rem;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      background: #626262;
+      display: block;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .video__controls {
+    //width: 41.25rem;
+    //height: 2.1875rem;
+
+    height: 2.1875rem;
+    width: 100%;
+    background-color: #3e3e3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+ }
+
+ .video__icon {
+    width: 1rem;
+    height: 1.375rem;
+    
+ }
+
+ .video__start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .video__start-button {
+    display: block;
+    width: 1rem;
+    height: 1.375rem;
+ }
+
+.video__duration {
+    width: 60%;
+}
+
+.video__playback {
+    width: 100%;
+}
+
+  .video__playback-button {
+    background: #626262;
+    border-radius: 3.125rem;
+    border: none;
+    width: 0.75rem;
+    height: 0.75rem;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0;
+  }
+
+  .video__time {
+    color: #626262;
+    font-weight: bold;
+  }

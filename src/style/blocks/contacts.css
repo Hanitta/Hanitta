@@ -1,0 +1,34 @@
+.contacts {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 60px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.contacts__address, .contacts__phone {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.contacts__phone {
+  color: #e45028;
+  font-weight: 700; }
+
+.contacts__phone::before {
+  content: url(../img/phone.png);
+  margin-right: 6px;
+  margin-top: 5px; }

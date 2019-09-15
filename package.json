@@ -1,0 +1,41 @@
+{
+  "name": "gulp-learning",
+  "version": "1.0.0",
+  "description": "\"# Hanitta\"",
+  "main": "map.js",
+  "scripts": {
+    "gulp": "cross-env NODE_ENV=dev gulp",
+    "build": "cross-env NODE_ENV=prod gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hanitta/Hanitta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hanitta/Hanitta/issues"
+  },
+  "homepage": "https://github.com/Hanitta/Hanitta#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "cross-env": "^5.2.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "^2.1.1",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

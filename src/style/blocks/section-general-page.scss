@@ -1,0 +1,78 @@
+
+
+.page {
+    display: flex;
+    width: 100%;
+
+    @include tab {
+        flex-direction: column;
+        align-items: center;
+        padding: 7%;
+    }
+}
+
+.content_banner {
+    display: flex;
+    margin-top: 1.875rem;
+    min-height: 29.81rem;
+
+    @include tab {
+        margin: 0;
+    }
+}
+
+.banner {
+    display: block;
+    flex: 1;
+    margin-right: 0.81rem;
+}
+
+.banner__img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'Gagalin';
+    src: url("../fonts/Gagalin-Regular.otf") format("opentype");
+}
+
+.title {
+    color: $colorOrange;
+    font-family: $fontFamilyGagalin;
+    font-size: 4.5rem;
+    font-weight: 400;
+
+    @include tab { 
+        line-height: 4rem;
+    }
+}
+
+.title-general-page,
+.description__text {
+    @include tab {
+    margin: 1.25rem 0;
+    text-align: center;
+    }
+}
+
+@font-face {
+    font-family: 'Lifehack Medium';
+    src: url("../fonts/Lifehack\ Medium.otf") format("opentype");
+}
+  
+.description__text {
+    font-family: $fontFamilyLifehack;
+    font-weight: 500;
+    letter-spacing: -0.1018rem;
+    line-height: 4.0625rem;
+    color: #ffffff; 
+    font-size: 4.06rem;
+    width: 25.37rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}

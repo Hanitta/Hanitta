@@ -1,0 +1,7 @@
+.page-order {
+  background: #000;
+  width: 100%;
+  height: 100vh; }
+
+.texture-order {
+  background: url(../../img/bg-texture.png) center center/cover no-repeat; }
