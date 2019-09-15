@@ -1,0 +1,38 @@
+
+.overlay-order {
+    display: none;
+    background: rgba(47, 50, 52, 0.99);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;    
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.overlay-order__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.overlay-order__text {
+    width: 12.25rem;
+    height: 6.625rem;
+    background: #fff;
+    border-radius: 0.31rem;
+    font-family: $fontFamily;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.overlay__desc {
+    margin: 0 auto;
+}

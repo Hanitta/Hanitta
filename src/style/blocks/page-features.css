@@ -1,0 +1,60 @@
+.page-features {
+  background: url(../img/bg.png) center center/cover no-repeat;
+  height: 100vh;
+  width: 100%; }
+
+.content_page-features {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.title_black {
+  color: #2f3234;
+  margin-bottom: 30px; }
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.feature__block {
+  max-width: 285px;
+  text-align: center;
+  margin-right: 35px; }
+
+.feature__block:last-child {
+  margin-right: 0; }
+
+.feature__img {
+  margin: 30px; }
+
+.feature__header {
+  color: #2f3234;
+  font-family: "Lifehack Medium";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.14px;
+  letter-spacing: -0.6px;
+  margin-bottom: 10px; }
+
+.feature__desc {
+  opacity: 0.8;
+  color: #2f3234;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24.02px; }

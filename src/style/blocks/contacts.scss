@@ -1,0 +1,33 @@
+.contacts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 3.75rem;
+    align-items: flex-start;
+    justify-content: center; 
+
+    @include phones {
+        align-items: center;
+    }
+
+    
+}
+
+.contacts__address, .contacts__phone {
+    color: $colorWhite;
+    font-family: $fontFamily;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.contacts__block {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__phone {
+    color: #e45028;
+    font-weight: 700;
+    margin-left: 0.625rem;
+}

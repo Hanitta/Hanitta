@@ -35,6 +35,9 @@ $colorGrey: #2f3234;
 @import '../css/normalize.css';
 
 @import './variables.scss';
+
+@import './blocks/wrapper.scss';
+
 @import './blocks/general.scss';
 @import './blocks/general-page.scss';
 @import './blocks/header.scss';
@@ -54,6 +57,8 @@ $colorGrey: #2f3234;
 
 @import './blocks/page-comments.scss';
 @import './blocks/overlay.scss';
+
+@import './blocks/page-video.scss';
 
 @import './blocks/page-order.scss';
 @import './blocks/form.scss';

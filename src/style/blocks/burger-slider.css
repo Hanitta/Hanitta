@@ -1,0 +1,7 @@
+.burger-slider {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(#e45028), to(#f9b43b));
+  background-image: -webkit-linear-gradient(#f9b43b, #e45028, #f9b43b);
+  background-image: -o-linear-gradient(#f9b43b, #e45028, #f9b43b);
+  background-image: linear-gradient(#f9b43b, #e45028, #f9b43b); }

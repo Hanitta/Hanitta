@@ -1,0 +1,47 @@
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+.nav__item {
+    list-style: none;    
+    &::after {
+        content: "•";
+        margin-right: 0.9375rem;
+        margin-left: 0.9375rem;
+    }
+    
+    &:last-child {
+        &::after {
+       display: none;
+        }
+    }
+ 
+}
+
+.nav__link {
+    color: $colorWhite;
+}
+
+.nav-menu {
+    @include tab {
+        display: none;
+    }
+}
+
+.hamburger-menu {
+    display: none;
+    position: relative;
+/*
+&:hover .full-screen-menu {
+        display: block;
+    }
+*/
+    @include tab {
+        display: flex;
+        margin-left: 0.625rem;
+    }
+
+}

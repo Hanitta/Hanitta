@@ -1,0 +1,31 @@
+
+.social-block {
+    display: flex;
+    flex: 1;
+    height: 3.75rem;
+    justify-content: flex-end;
+    align-items: center;
+
+   
+}
+
+.social-block__list {
+    display: flex;
+}
+
+.social-block__elem {
+    display: block;
+    text-align: center;
+  
+    margin: 0.625rem;
+}
+
+.social__img {
+    width: 1.4375rem;
+    height: 1.5rem;
+    fill: #585858;
+
+    &:hover {
+        fill: #fff;
+    }
+}
